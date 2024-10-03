@@ -21,13 +21,13 @@ const page = () => {
   };
 
   return (
-    <div className="flex items-center justify-around flex-col md:flex-row min-h-screen bg-white">
-         <div className='flex justify-center'>
-            <img className='xl:w-[300px] lg:w-[80%] w-[90%]' src="/image 12.png" alt="" />
+    <div className="flex items-center justify-around flex-col md:flex-row min-h-screen w-full bg-white" id="Contact">
+         <div className='flex justify-center  w-full md:w-1/2'>
+            <img className='w-80 md:w-full md:mx-10 md:h-[28rem] 'src="/image 12.png" alt="" />
         </div>
 
-      <div className="bg-white p-8 rounded-lg shadow-md">
-        <form onSubmit={handleSubmit} className="space-y-4">
+      <div className="bg-white md:p-8  rounded-lg shadow-md w-full md:w-1/2 ">
+        <form onSubmit={handleSubmit} className="space-y-4 mx-6">
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">

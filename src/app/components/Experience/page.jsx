@@ -58,8 +58,8 @@ const page = () => {
   return (
     <section className="section py-10 overflow-hidden md:mx-20 ">
       <div className="container mx-auto px-2 w-full max-w-full">
-        <h1 className="text-center text-4xl font-bold">Experience</h1>
-        <div className="flex justify-between items-center pt-3 mb-4 px-4">
+        <h1 className="text-center md:text-4xl text-2xl font-bold">Experience</h1>
+        <div className="flex justify-between items-center pt-3 mb-4 px-2 ">
           {/* Slider Container */}
           <button
             type="button"
@@ -72,7 +72,7 @@ const page = () => {
           </button>
 
           <div className="relative w-full overflow-hidden">
-            <div className="flex justify-between mx-2" style={slideStyle}>
+            <div className="flex justify-between" style={slideStyle}>
               {works.map((work, id) => (
                 <div
                   key={id}
@@ -83,8 +83,6 @@ const page = () => {
                   }}
                 >
                   <div
-                    data-aos="zoom-in"
-                    data-aos-duration="200"
                     className="p-2 flex justify-center items-center"
                   >
                     <img
