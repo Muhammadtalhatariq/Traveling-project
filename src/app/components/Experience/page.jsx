@@ -63,7 +63,7 @@ const page = () => {
           {/* Slider Container */}
           <button
             type="button"
-            className=" p-2 bg-gray-200 rounded-full"
+            className="p-2 bg-white shadow-lg rounded-full"
             onClick={prevSlide}
             disabled={currentIndex === 0}
             style={{ opacity: currentIndex === 0 ? 0.5 : 1 }}
@@ -100,7 +100,7 @@ const page = () => {
           <button
             // data-aos='fade-left'
             type="button"
-            className=" p-2 bg-gray-200 rounded-full"
+            className=" p-2 bg-white shadow-lg rounded-full"
             onClick={nextSlide}
             disabled={currentIndex >= maxIndex}
             style={{ opacity: currentIndex >= maxIndex ? 0.5 : 1 }}
