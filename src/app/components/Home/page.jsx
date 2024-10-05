@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Form from "./form";
 import { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
@@ -35,25 +36,6 @@ export default function page() {
     },
   ];
 
-  const [formData, setFormData] = useState({
-    from: "",
-    to: "",
-    depart: "",
-    return: "",
-    travelers: "",
-    cabinClass: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here, e.g., send data to API
-    console.log(formData);
-  };
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -62,9 +44,9 @@ export default function page() {
   };
 
   return (
-    <div className="bg-blue-700  text-white font-sans w-full px-2">
-      <header className="py-8 px-2">
-        <div className="flex justify-between items-center flex-row gap-3">
+    <div className="bg-blue-700  text-white font-sans w-full ">
+      <header className="lg;py-8 py-3 px-2">
+        <div className="flex justify-between items-center flex-row gap-3 px-2">
           <h1 className="text-xl text-center sm:text-start font-serif">
             Travel Air <br /> International
           </h1>
@@ -94,7 +76,6 @@ export default function page() {
             <FaInstagramSquare />
           </div>
         </div>
-
         <nav className="mt-6 flex flex-col md:flex-row space-y-3 sm:space-y-0 sm:space-x-8">
           <ul className="hidden md:flex flex-wrap gap-5 justify-center md:justify-start">
             {menu.map((item, id) => (
@@ -113,7 +94,7 @@ export default function page() {
         </nav>
         {/* mbl view  */}
         {isMenuOpen && (
-          <nav className="flex flex-col bg-blue-500 ">
+          <nav className="flex flex-col bg-blue-500 w-full px-0">
             <ul className="flex flex-col gap-3 justify-center items-center space-y-2 py-3">
               {menu.map((item, id) => (
                 <li
@@ -135,121 +116,8 @@ export default function page() {
         </p>
       </header>
 
-      {/* Form  */}
-      <section className="container mx-auto py-6 px-4 sm:px-2 flex">
-        <form
-          onSubmit={handleSubmit}
-          className="00 rounded-lg p-8 shadow-md text-black"
-        >
-          <div className="flex flex-wrap sm:flex-nowrap gap-2 justify-center items-center">
-            <div className="bg-white rounded-2xl p-4">
-              <label htmlFor="from" className="block mb-2">
-                From
-              </label>
-              <div>
-                <select
-                  value={formData.from}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 rounded-xl outline-none  text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  name="from"
-                  id="from"
-                >
-                  <option value="">Country, City, Airport</option>
-                  <option value="new_york">New York</option>
-                  <option value="london">London</option>
-                  <option value="paris">Paris</option>
-                  <option value="tokyo">Tokyo</option>
-                </select>
-              </div>
-              {/* <input
-                type="text"
-                id="from"
-                name="from"
-                value={formData.from}
-                onChange={handleChange}
-                className="w-full px-4 py-2 rounded-xl outline-none  text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Country, City, Airport"
-              /> */}
-            </div>
-            <div className="bg-white rounded-2xl p-4">
-              <label htmlFor="to" className="block mb-2">
-                To
-              </label>
-              <div>
-                <select
-                  value={formData.to}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 rounded-xl outline-none text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  name="to"
-                  id="to"
-                >
-                  <option value="">Country, City, Airport</option>
-                  <option value="new_york">New York</option>
-                  <option value="london">London</option>
-                  <option value="paris">Paris</option>
-                  <option value="tokyo">Tokyo</option>
-                </select>
-              </div>
-              {/* <input
-                type="text"
-                id="to"
-                name="to"
-                value={formData.to}
-                onChange={handleChange}
-                className="w-full px-4 py-2 rounded-md outline-none text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Country, City, Airport"
-              /> */}
-            </div>
-            <div className="bg-white rounded-2xl p-4">
-              <label htmlFor="depart" className="block mb-2">
-                Depart
-              </label>
-              <input
-                type="date"
-                id="depart"
-                name="depart"
-                value={formData.depart}
-                onChange={handleChange}
-                className="w-full px-4 py-2 rounded-md outline-none text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-            <div className="bg-white rounded-2xl p-4">
-              <label htmlFor="return" className="block mb-2">
-                Return
-              </label>
-              <input
-                type="date"
-                id="return"
-                name="return"
-                value={formData.return}
-                onChange={handleChange}
-                className="w-full px-4 py-2 rounded-md outline-none text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-            <div className="bg-white rounded-2xl p-4">
-              <label htmlFor="travelers" className="block mb-2">
-                Travelers & Cabin Class
-              </label>
-              <input
-                type="text"
-                id="travelers"
-                name="travelers"
-                value={formData.travelers}
-                onChange={handleChange}
-                className="w-full px-4 py-2 rounded-md outline-none text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="1 Adult, Economy"
-              />
-            </div>
-            <div>
-              <input
-                type="submit"
-                value="Send Query"
-                className="w-full px-4 py-4 rounded-2xl outline-none bg-blue-600 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-          </div>
-        </form>
-      </section>
+      {/* Form component */}
+      <Form />
     </div>
   );
 }
