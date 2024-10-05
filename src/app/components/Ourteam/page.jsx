@@ -3,12 +3,12 @@ import Image from "next/image";
 
 const page = () => {
   return (
-    <div className="container mx-auto  py-20  min-h-screen">
+    <div className="container mx-auto  lg:py-20 py-10  lg:min-h-screen">
       <h2 className="text-3xl font-bold text-center mb-8">Meet Our Team</h2>
       <div className=" flex flex-col gap-4 text-white w-full">
 
-        <div className="md:relative ">
-          <div className="md:absolute md:right-0 py-4 md:py-0 flex flex-col md:flex-row justify-center items-center md:rounded-l-full bg-blue-800 rounded-lg shadow-md mb-4 md:w-2/3 ">
+        <div className="lg:relative flex lg:justify-end justify-center mx-3 ">
+          <div className="lg:absolute lg:right-0 py-4 lg:py-0 flex flex-col lg:flex-row justify-center items-center lg:rounded-l-full bg-blue-800 rounded-lg shadow-md mb-4 md:w-2/3 ">
             <div className=" mb-4 md:mb-0 mr-2">
               <div className="relative w-48 h-48 rounded-full overflow-hidden">
                 <img
@@ -33,8 +33,8 @@ const page = () => {
           </div>
         </div>
 
-        <div className="md:relative">
-          <div className="md:absolute md:top-52 py-4 md:py-0 flex flex-col md:flex-row items-center md:rounded-r-full bg-blue-800 rounded-lg shadow-md mb-4 md:w-2/3">
+        <div className="lg:relative flex lg:justify-start justify-center mx-3">
+          <div className="lg:absolute lg:top-52 py-4 lg:py-0 flex flex-col lg:flex-row items-center justify-center lg:rounded-r-full bg-blue-800 rounded-lg shadow-md mb-4 md:w-2/3">
             <div className="px-2 text-center md:text-start">
               <h3 className="text-xl font-bold mb-2">Mr. Adeel Shoaib Butt</h3>
               <p className=" mb-2">Director</p>

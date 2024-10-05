@@ -22,7 +22,7 @@ const page = () => {
 
   return (
     <div
-      className="flex items-center justify-around flex-col md:flex-row min-h-screen w-full bg-white"
+      className="flex items-center justify-around flex-col md:flex-row lg:min-h-screen w-full bg-white"
       id="Contact"
     >
       <div className="flex justify-center  w-full md:w-1/2">
