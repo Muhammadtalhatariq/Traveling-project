@@ -46,20 +46,20 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-bold mb-4">Services</h3>
           <ul className="list-disc list-inside space-y-2">
-            <li>Airline Reservations</li>
-            <li>Ticketing of all the major airlines.</li>
-            <li>Worldwide Hotel accommodations</li>
-            <li>Tour packages & Car rentals</li>
-            <li>Visa assistance</li>
-            <li>Travel Insurance</li>
+            <li className='cursor-pointer hover:underline'>Airline Reservations</li>
+            <li className='cursor-pointer hover:underline'>Ticketing of all the major airlines.</li>
+            <li className='cursor-pointer hover:underline'>Worldwide Hotel accommodations</li>
+            <li className='cursor-pointer hover:underline'>Tour packages & Car rentals</li>
+            <li className='cursor-pointer hover:underline'>Visa assistance</li>
+            <li className='cursor-pointer hover:underline'>Travel Insurance</li>
           </ul>
         </div>
 
         <div>
-          <ul className="list-disc list-inside space-y-2 md:mt-10">
-            <li>Ticket delivery at door step</li>
-            <li>24 hours answering capability</li>
-            <li>Visa/Master Card acceptance</li>
+          <ul className="list-disc list-inside space-y-2 lg:mt-10">
+            <li className='cursor-pointer hover:underline'>Ticket delivery at door step</li>
+            <li className='cursor-pointer hover:underline'>24 hours answering capability</li>
+            <li className='cursor-pointer hover:underline'>Visa/Master Card acceptance</li>
           </ul>
         </div>
 
@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="text-center mt-2 text-sm text-white">
+      <div className="text-center mt-2 text-sm text-white cursor-pointer hover:underline">
         Powered by Structure Int. &copy; 2023
       </div>
     </footer>

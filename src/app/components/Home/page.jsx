@@ -40,14 +40,13 @@ export default function page() {
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
-    console.log(isMenuOpen);
   };
 
   return (
-    <div className="bg-blue-700  text-white font-sans w-full ">
+    <div className="bg-blue-700  text-white font-sans w-full lg:px-6 ">
       <header className="lg;py-8 py-3 px-2">
         <div className="flex justify-between items-center flex-row gap-3 px-2">
-          <h1 className="text-xl text-center sm:text-start font-serif">
+          <h1 className="text-xl text-center sm:text-start font-serif cursor-pointer" >
             Travel Air <br /> International
           </h1>
 
@@ -69,7 +68,7 @@ export default function page() {
               </svg>
             </button>
           </div>
-          <div className="hidden sm:flex gap-3 text-2xl cursor-pointer">
+          <div className="hidden sm:flex gap-3 text-2xl cursor-pointer ">
             <FaLinkedin />
             <FaWhatsappSquare />
             <FaFacebookSquare />
@@ -78,10 +77,10 @@ export default function page() {
         </div>
         <nav className="mt-6 flex flex-col md:flex-row space-y-3 sm:space-y-0 sm:space-x-8">
           <ul className="hidden md:flex flex-wrap gap-5 justify-center md:justify-start">
-            {menu.map((item, id) => (
+            {menu.map((item, id) =>(
               <li
                 key={item.id}
-                className="border-[1px] border-white md:p-3 p-2  rounded-full"
+                className="border-[1px] border-white md:p-3 p-2 rounded-full duration-1000 hover:bg-blue-600"
               >
                 <div>
                   <Link href={item.path} className="">

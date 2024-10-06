@@ -2,21 +2,28 @@
 import React, { useState } from "react";
 
 const page = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [emailAddress, setEmailAddress] = useState("");
-  const [comments, setComments] = useState("");
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    phoneNumber: "",
+    emailAddress: "",
+    comments: "",
+  });
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission here, e.g., send data to a server
-    console.log("Form submitted:", {
-      firstName,
-      lastName,
-      phoneNumber,
-      emailAddress,
-      comments,
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here, e.g., send data to API
+    console.log(formData);
+    setFormData({
+      firstName: "",
+      lastName: "",
+      phoneNumber: "",
+      emailAddress: "",
+      comments: "",
     });
   };
 
@@ -51,9 +58,10 @@ const page = () => {
                 <input
                   type="text"
                   id="firstName"
+                  name="firstName"
                   className="mt-1 p-2 w-full border rounded-md outline-none"
-                  value={firstName}
-                  onChange={(e) => setFirstName(e.target.value)}
+                  value={formData.firstName}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -67,9 +75,10 @@ const page = () => {
                 <input
                   type="text"
                   id="lastName"
+                  name="lastName"
                   className="mt-1 p-2 w-full border rounded-md outline-none"
-                  value={lastName}
-                  onChange={(e) => setLastName(e.target.value)}
+                  value={formData.lastName}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -84,9 +93,10 @@ const page = () => {
               <input
                 type="tel"
                 id="phoneNumber"
+                name="phoneNumber"
                 className="mt-1 p-2 w-full border rounded-md outline-none"
-                value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
+                value={formData.phoneNumber}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -100,9 +110,10 @@ const page = () => {
               <input
                 type="email"
                 id="emailAddress"
+                name="emailAddress"
                 className="mt-1 p-2 w-full border rounded-md"
-                value={emailAddress}
-                onChange={(e) => setEmailAddress(e.target.value)}
+                value={formData.emailAddress}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -115,15 +126,16 @@ const page = () => {
               </label>
               <textarea
                 id="comments"
+                name="comments"
                 className="mt-1 p-2 w-full border rounded-md outline-none"
                 rows="4"
-                value={comments}
-                onChange={(e) => setComments(e.target.value)}
+                value={formData.comments}
+                onChange={handleChange}
               />
             </div>
             <button
               type="submit"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              className="bg-blue-500 duration-1000 hover:bg-transparent hover:text-black text-white font-bold py-2 px-4 rounded"
             >
               SUBMIT
             </button>
@@ -133,5 +145,4 @@ const page = () => {
     </div>
   );
 };
-
 export default page;
