@@ -35,7 +35,7 @@ const form = () => {
           onSubmit={handleSubmit}
           className="00 rounded-lg p-8 shadow-md text-black"
         >
-          <div className="flex flex-wrap sm:flex-nowrap gap-2 justify-center items-center">
+          <div className="flex flex-wrap xl:flex-nowrap gap-2 justify-center items-center">
             <div className="from-to flex gap-2 w-72 lg:w-96">
               <div className="bg-white rounded-2xl p-3">
                 <label htmlFor="from" className="block mb-2">
