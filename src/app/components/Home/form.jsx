@@ -7,7 +7,6 @@ const form = () => {
     depart: "",
     return: "",
     travelers: "",
-    cabinClass: "",
   });
 
   const handleChange = (e) => {
@@ -43,11 +42,12 @@ const form = () => {
                 </label>
                 <div>
                   <select
+                    name="from"
+                    id="from"
                     value={formData.from}
                     onChange={handleChange}
                     className="w-full px-4 py-2 rounded-xl outline-none  text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    name="from"
-                    id="from"
+                    required
                   >
                     <option value="">Country, City, Airport</option>
                     <option value="new_york">New York</option>
@@ -69,6 +69,7 @@ const form = () => {
                     className="w-full px-4 py-2 rounded-xl outline-none text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     name="to"
                     id="to"
+                    required
                   >
                     <option value="">Country, City, Airport</option>
                     <option value="new_york">New York</option>
@@ -90,6 +91,7 @@ const form = () => {
                 name="depart"
                 value={formData.depart}
                 onChange={handleChange}
+                required
                 className="w-full px-4 py-2 rounded-md outline-none text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -104,6 +106,7 @@ const form = () => {
                 name="return"
                 value={formData.return}
                 onChange={handleChange}
+                required
                 className="w-full px-4 py-2 rounded-md outline-none text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -117,6 +120,7 @@ const form = () => {
                 name="travelers"
                 value={formData.travelers}
                 onChange={handleChange}
+                required
                 className="w-full px-4 py-2 rounded-md outline-none text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="1 Adult, Economy"
               />

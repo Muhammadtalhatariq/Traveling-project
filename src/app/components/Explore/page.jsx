@@ -35,7 +35,7 @@ const page = () => {
                     <div className='flex justify-around flex-col lg:flex-row lg:gap-2 p-2 w-full  '>
                         {/* IMAGE SECTION */}
                         <div className='image-section text-center xl:justify-start  flex justify-center w-full lg:w-1/2'>
-                            <img className=' md:object-contain' src="/pexel.png" alt="" />
+                            <img className='md:object-contain' src="/pexel.png" alt="" />
                         </div>
                         {/* TEXT AREA SECTION */}
                         <div className='flex justify-center items-center flex-wrap w-full lg:w-1/2 px-2 '>

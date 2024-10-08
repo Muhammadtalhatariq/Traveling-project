@@ -15,7 +15,7 @@ const page = () => {
                   src="/image 10.png"
                   alt=""
                   layout="fill"
-                  objectFit="cover"
+                  objectfit="cover"
                 />
               </div>
             </div>
@@ -53,7 +53,7 @@ const page = () => {
                   src="/image 11.png"
                   alt=""
                   layout="fill"
-                  objectFit="cover"
+                  objectfit="cover"
                 />
               </div>
             </div>
