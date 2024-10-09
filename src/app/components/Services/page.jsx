@@ -49,13 +49,13 @@ const page = () => {
       <div className="mt-24 md:mx-16 mx-4" id="Services">
         <h3 className="text-center md:text-2xl text-xl font-semibold">OUR SERVICES</h3>
         <div className="flex flex-wrap md:justify-between justify-center mt-10 md:gap-8 gap-4 ">
-          {services.map((item) => (
+          {services.map((item) =>(
             <div
               key={item.id}
-              className=" w-[280px] h-[300px] bg-white shadow-2xl xl:mt-0 mt-6 hover:scale-105 border-b-4 border-blue-600"
+              className=" lg:w-[280px] w-40 flex gap-4 lg:h-[300px] h-60 bg-white shadow-2xl xl:mt-0 mt-6 hover:scale-105 border-b-4 border-blue-600"
             >
               <div>
-                <img  src={item.img} alt={item.title}  className="h-60 w-80 bg-cover overflow-hidden"/>
+                <img  src={item.img} alt={item.title}  className="lg:h-60 h-40 lg:w-80 w-40 bg-cover overflow-hidden"/>
                 <p className="font-bold text-xl font-serif mt-4 p-0 text-center">
                   {item.title}
                 </p>
