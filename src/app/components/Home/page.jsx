@@ -95,7 +95,7 @@ export default function page() {
         {isMenuOpen && (
           <nav className="flex flex-col bg-blue-500 w-full px-0">
             <ul className="flex flex-col gap-3 justify-center items-center space-y-2 py-3">
-              {menu.map((item, id) => (
+              {menu.map((item, id) =>(
                 <li
                   key={item.id}
                   className="border-[1px] border-white  p-4 text-white rounded-full"
