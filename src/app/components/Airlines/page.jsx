@@ -74,9 +74,9 @@ const page = () => {
         <h2 className=" font-semibold text-xl text-center">
           Major Sellable Airlines
         </h2>
-        <div className="flex flex-wrap xl:gap-0 gap-3 justify-center items-center md:justify-between p-4">
+        <div className="flex flex-wrap xl:gap-0 gap-3 justify-center items-center md:justify-between lg:p-4">
           {Airlines.map((item) => (
-            <div key={item.id} className=" shadow-lg p-4 w-[200px] h-auto flex justify-center  mt-6 hover:scale-105">
+            <div key={item.id} className=" shadow-lg p-4 w-[100px] md:w-[200px] h-auto flex justify-center  mt-6 hover:scale-105">
               <img
                 className="w-[100px] object-contain"
                 src={item.img}
