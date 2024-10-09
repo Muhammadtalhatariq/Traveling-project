@@ -34,10 +34,10 @@ const form = () => {
           onSubmit={handleSubmit}
           className="00 rounded-lg p-8 shadow-md text-black"
         >
-          <div className="flex flex-wrap xl:flex-nowrap gap-2 justify-center items-center">
-            <div className="from-to flex gap-2 w-72 lg:w-96">
-              <div className="bg-white rounded-2xl p-3">
-                <label htmlFor="from" className="block mb-2">
+          <div className="flex flex-wrap xl:flex-nowrap gap-2 justify-center items-center ">
+            <div className="from-to flex gap-2 w-72 lg:w-96 h-20">
+              <div className="bg-white rounded-2xl px-3 ">
+                <label htmlFor="from" className="block mb-1 px-2">
                   From
                 </label>
                 <div>
@@ -46,7 +46,7 @@ const form = () => {
                     id="from"
                     value={formData.from}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-xl outline-none  text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full p-2 rounded-xl outline-none  text-black border border-gray-400 "
                     required
                   >
                     <option value="">Country, City, Airport</option>
@@ -58,15 +58,15 @@ const form = () => {
                 </div>
               </div>
 
-              <div className="bg-white rounded-2xl p-3">
-                <label htmlFor="to" className="block mb-2">
+              <div className="bg-white rounded-2xl px-3">
+                <label htmlFor="to" className="block mb-1 px-2">
                   To
                 </label>
                 <div>
                   <select
                     value={formData.to}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-xl outline-none text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full p-2 rounded-xl outline-none text-black border border-gray-400 "
                     name="to"
                     id="to"
                     required
@@ -81,8 +81,8 @@ const form = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-3 w-72 lg:w-52 ">
-              <label htmlFor="depart" className="block mb-2">
+            <div className="bg-white rounded-2xl px-3 w-72 lg:w-52 h-20">
+              <label htmlFor="depart" className="block mb-1 px-2">
                 Depart
               </label>
               <input
@@ -92,12 +92,12 @@ const form = () => {
                 value={formData.depart}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 rounded-md outline-none text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-2 rounded-md outline-none text-black border border-gray-400 "
               />
             </div>
 
-            <div className="bg-white rounded-2xl p-3 w-72 lg:w-52">
-              <label htmlFor="return" className="block mb-2">
+            <div className="bg-white rounded-2xl px-3 w-72 lg:w-52 h-20">
+              <label htmlFor="return" className="block mb-1 px-2">
                 Return
               </label>
               <input
@@ -107,11 +107,11 @@ const form = () => {
                 value={formData.return}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 rounded-md outline-none text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-2 rounded-md outline-none text-black border border-gray-400 "
               />
             </div>
-            <div className="bg-white rounded-2xl p-3 w-72 lg:w-52">
-              <label htmlFor="travelers" className="block mb-2">
+            <div className="bg-white rounded-2xl px-3 w-72 lg:w-52 h-20">
+              <label htmlFor="travelers" className="block mb-1 px-2">
                 Travelers & Cabin Class
               </label>
               <input
@@ -121,7 +121,7 @@ const form = () => {
                 value={formData.travelers}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 rounded-md outline-none text-black border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-2 rounded-md outline-none text-black border border-gray-400"
                 placeholder="1 Adult, Economy"
               />
             </div>
@@ -129,7 +129,7 @@ const form = () => {
               <input
                 type="submit"
                 value="Send Query"
-                className="w-full px-4 py-4 rounded-2xl outline-none bg-blue-600 duration-1000 hover:bg-transparent text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-2 rounded-2xl outline-none bg-blue-600 duration-1000 hover:bg-transparent text-white border border-gray-400 "
               />
             </div>
           </div>
