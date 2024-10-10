@@ -49,13 +49,9 @@ const page = () => {
           <form onSubmit={handleSubmit} className="space-y-4 mx-6 ">
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label
-                  htmlFor="firstName"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  First Name
-                </label>
+              
                 <input
+                  placeholder="First Name"
                   type="text"
                   id="firstName"
                   name="firstName"
@@ -66,13 +62,9 @@ const page = () => {
                 />
               </div>
               <div>
-                <label
-                  htmlFor="lastName"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Last Name
-                </label>
+             
                 <input
+                 placeholder="Last Name"
                   type="text"
                   id="lastName"
                   name="lastName"
@@ -84,13 +76,9 @@ const page = () => {
               </div>
             </div>
             <div>
-              <label
-                htmlFor="phoneNumber"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Phone Number
-              </label>
+            
               <input
+               placeholder="Phone Number"
                 type="tel"
                 id="phoneNumber"
                 name="phoneNumber"
@@ -101,13 +89,9 @@ const page = () => {
               />
             </div>
             <div>
-              <label
-                htmlFor="emailAddress"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Email Address
-              </label>
+            
               <input
+              placeholder=' Email Address'
                 type="email"
                 id="emailAddress"
                 name="emailAddress"
@@ -118,13 +102,9 @@ const page = () => {
               />
             </div>
             <div>
-              <label
-                htmlFor="comments"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Comments
-              </label>
+           
               <textarea
+              placeholder='Comments'
                 id="comments"
                 name="comments"
                 className="mt-1 p-2 w-full border rounded-md outline-none"
