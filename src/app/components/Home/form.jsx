@@ -116,7 +116,7 @@ const form = () => {
               <input
                 type="submit"
                 value="Send Query"
-                className="w-full p-2 rounded-2xl outline-none bg-blue-600 duration-1000 hover:bg-transparent text-white border border-gray-400 "
+                className="w-full p-2 rounded-2xl outline-none bg-blue-600 hover:text-blue-500 duration-1000 hover:bg-transparent text-white border border-gray-400 "
               />
             </div>
           </div>
