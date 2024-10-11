@@ -75,12 +75,12 @@ export default function page() {
             <FaInstagramSquare />
           </div>
         </div>
-        <nav className="mt-6 flex flex-col md:flex-row space-y-3 sm:space-y-0 sm:space-x-8">
+        <nav className="mt-16 flex flex-col md:flex-row space-y-3 sm:space-y-0 sm:space-x-8">
           <ul className="hidden md:flex flex-wrap gap-5 justify-center md:justify-start">
             {menu.map((item, id) =>(
               <li
                 key={item.id}
-                className="border-[1px] border-white md:p-3 p-2 rounded-full duration-1000 hover:bg-blue-600"
+                className="border-[1px] border-white md:p-3 px-5 p-2 rounded-full duration-1000 hover:bg-blue-600"
               >
                 <div>
                   <Link href={item.path} className="">

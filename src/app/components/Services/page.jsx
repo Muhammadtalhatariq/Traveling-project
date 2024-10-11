@@ -52,7 +52,7 @@ const page = () => {
           {services.map((item) =>(
             <div
               key={item.id}
-              className=" lg:w-[280px] w-40 flex gap-4 lg:h-[300px] h-60 bg-white shadow-2xl xl:mt-0 mt-6 hover:scale-105 rounded-2xl overflow-hidden"
+              className=" lg:w-[280px] w-40 flex gap-4 lg:h-[300px] h-60 bg-white shadow-lg xl:mt-0 mt-6 hover:scale-105 rounded-lg overflow-hidden"
             >
               <div>
                 <img  src={item.img} alt={item.title}  className="lg:h-60 h-40 lg:w-80 w-40 bg-cover overflow-hidden"/>
