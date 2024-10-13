@@ -16,24 +16,25 @@ export default function page() {
     },
     {
       id: 2,
-      name: "AirLines",
-      path: "#AirLines",
-    },
-    {
-      id: 3,
-      name: "Services",
-      path: "#Services",
-    },
-    {
-      id: 4,
       name: "About Us",
       path: "#AboutUs",
     },
     {
-      id: 5,
+      id: 3,
       name: "Contact",
       path: "#Contact",
     },
+    {
+      id: 4,
+      name: "AirLines",
+      path: "#AirLines",
+    },
+    {
+      id: 5,
+      name: "Services",
+      path: "#Services",
+    },
+   
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);

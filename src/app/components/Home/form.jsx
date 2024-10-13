@@ -77,8 +77,8 @@ const form = () => {
 
             <div className=" rounded-2xl p-3 w-72 lg:w-52 ">
               <input
-                placeholder=" Depart Date"
-                type="text"
+                // placeholder=" Depart Date"
+                type="date"
                 id="depart"
                 name="depart"
                 value={formData.depart}
@@ -90,8 +90,8 @@ const form = () => {
 
             <div className=" rounded-2xl p-3 w-72 lg:w-52 ">
               <input
-                placeholder="Return Date"
-                type="text"
+                // placeholder="Return Date"
+                type="date"
                 id="return"
                 name="return"
                 value={formData.return}
