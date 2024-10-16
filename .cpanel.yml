@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/travelai/public_html/
+    - /bin/cpm * $DEPLOYPATH
+  
